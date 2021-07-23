@@ -1,37 +1,49 @@
 <html>
+
 <head>
-  <title>Realtime Drawing</title>
+    <title>A Case Study</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
-  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Festive&family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Festive&family=Nunito+Sans:wght@200&family=Tourney:ital,wght@1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-<center>
-  <h3 class="heading">Changing width, height and postion of a square in Realtime
-    <br><br>
-    <span class="note">NOTE - Get your left and right wrist closer 
-      to reduce the size of the square and to increase the size of 
-      the square keep your left and right wrist far from each other. 
-      Move you nose to move the square</span>
-    <br>
-<span id="result" class="note"></span>
-  </h3>
-  
-</center>
-<div class="money_footer">
-  Developed By- Master Neehar Sheth. Don't copy or get S U E 😈
-  </div>
-<script src="main.js"></script>
+    <center>
+        <h1>Google Lens(who thinks a car is the oil war :/) vs Mobilenet(who thinks a blender is a pencil sharpener :/)</h1>
+        <br> <br> <br> <br>
+        <hr>
+        <div id="azzure_results_div">
+            <h5 id="wolfram_header">Output on <b>Google Lens</b>-
+                <span id="wolfram_results"></span>
+            </h5>
+            <hr>
+        </div>
+        <div>
+            <li><b>Test Image-</b><img onclick="change_image()" src="pencil.png" id="test_image" class="img-responsive"></li>
+            <button class="btn btn-info" onclick="check()">Test image models</button>
+        </div>
+        <div id="mobilenet_results_div">
+            <hr>
+            <h5 id="mobilenet_header">Output on <b>Mobilenet</b>-
+                <span id="mobilenet_results"></span>
+            </h5>
+            <hr>
+            
+        </div>
+        <div id="conclusion_results_div">
+            <hr>
+            <h5 id="mobilenet_header"><b>Conclusion</b>-
+                <span id="conclusion_results"></span>
+            </h5>
+            <hr>
+            
+        </div>
+    </center>
+    <script src="main.js"></script>
 </body>
+
 </html>
-
-
